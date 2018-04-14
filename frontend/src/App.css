@@ -1,0 +1,173 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{
+
+  padding: 100px;
+  background-color: #1f2328;
+  max-height: 1000px;
+}
+
+h2.header{
+  text-align: center;
+  color: #fff;
+}
+
+.users-map{
+  height: 500px;
+}
+
+.point-on-map>div{
+  position: relative;
+  color: #fff;
+  border-radius: 51px;
+  border: 1px solid black;
+  height: 60px;
+  width: 60px;
+  top: -20px;
+  left: -30px;
+  text-align: center;
+  padding:10px;
+}
+
+div.active{
+  background: green;
+}
+
+div.inActive{
+  background: lightgrey;
+}
+
+.point-on-map>div.inActive>button{
+  background: lightgrey;
+  border: none;
+
+}
+
+.point-on-map>div.active>button{
+  background: green;
+  border: none;
+}
+
+.users-list-map{
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.users-list{
+  flex:0.4;
+}
+
+.users-list-items{
+  overflow-y: scroll;
+  height: 450px;
+}
+
+.users-list-items::-webkit-scrollbar {
+  width: 1em;
+}
+
+.users-list-items::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #fff;
+}
+
+.users-list-items::-webkit-scrollbar-thumb {
+  background-color: #6e6ad1;
+  outline: 1px solid #6e6ad1;
+}
+
+
+.users-map{
+  flex:1;
+}
+
+.create-edit-user{
+  flex: 1 1;
+  width: 45rem;
+  height: 134px;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  background-color: #1f2328;
+  position:absolute;opacity: 1 !important;
+}
+
+#addNewUser{
+  flex: 0.05 1;
+  height: 49px;
+  margin: 23px;
+  border: solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #fff;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-size: 34px;
+}
+
+.users-list{
+  color: #fff;
+}
+
+
+.users-list label{
+  color: #6e6ad1;
+}
+
+.users-list ol li{
+  list-style-type: none;
+}
+
+.users-list ol>li{
+  list-style-type: none;
+  padding: 10px;
+}
+
+.sort-label{
+  color: #fff !important;
+}
+
+.create-edit-user label{
+  color: #6e6ad1;
+  margin: 5px;
+}
+
+.create-edit-user h2{
+  text-align: center;
+}
+
+.create-edit-user form{
+  padding: 10px;
+}
+
+.fade{
+  opacity: 0.3;
+}
