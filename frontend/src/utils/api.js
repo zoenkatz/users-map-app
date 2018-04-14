@@ -122,7 +122,6 @@ export const editUser = (userId, params) => {
 
 
 export const deleteUser = (userId) => {
-    debugger;
     let searchUrl = `/users/${userId}`;
     let token = localStorage.getItem('token') || Math.random() + 'zoe';
 

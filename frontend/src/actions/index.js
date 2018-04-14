@@ -58,7 +58,6 @@ export function deleteUserSuccess(data){
 }
 
 export function deleteUser(params){
-    debugger;
     return function(dispatch) {
         return api.deleteUser(params).then(data => {
             if(!data){

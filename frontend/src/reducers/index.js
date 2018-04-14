@@ -10,7 +10,6 @@ const initialUserState = {
 };
 
 function users(state = [], action){
-    debugger;
     switch (action.type) {
         case actionTypes.LOAD_USERS_SUCCESS:
             return action.data;

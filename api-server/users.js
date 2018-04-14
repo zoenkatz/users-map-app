@@ -60,7 +60,6 @@ function add (token, user) {
 function deleteUser (token, id) {
     return new Promise((res) => {
         let users = getData(token);
-        console.log(users);
         for(const user of users) {
             if(user._id === id){
                 res(user);

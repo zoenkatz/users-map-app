@@ -89,7 +89,6 @@ app.get('/users', (req, res) => {
 
 
 app.post('/users', bodyParser.json(), (req, res) => {
-    console.log(req);
     users.add(req.token, req.body)
         .then(
             (data) => res.send(data),
@@ -116,8 +115,6 @@ app.get('/users/:id', (req, res) => {
 });
 
 app.delete('/users/:id', (req, res) => {
-    console.log(req.params.id)
-    console.log(req.params)
     users.deleteUser(req.token, req.params.id)
         .then(
             (data) => res.send(data),

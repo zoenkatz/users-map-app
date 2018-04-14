@@ -44,7 +44,6 @@ class AddNewUser extends Component {
 
 
     handleChange = (value, userKey) => {
-        debugger;
         switch(userKey) {
             case 'name':
                 this.setState({

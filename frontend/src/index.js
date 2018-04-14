@@ -20,7 +20,6 @@ let state = {};
 
 
 const logger = store => next => action => {
-    debugger;
     console.group(action.type)
     console.info('dispatching', action)
     let result = next(action);
